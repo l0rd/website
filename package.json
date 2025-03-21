@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "lorie.do main page",
+  "homepage": "https://github.com/l0rd/website#readme",
+  "bugs": {
+    "url": "https://github.com/l0rd/website/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l0rd/website.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "eleventy.config.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

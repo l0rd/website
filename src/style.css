@@ -1,0 +1,105 @@
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/iosevka/index.css');
+
+:root {
+    /* Light theme colors */
+    --light-bg: #ffffff;
+    --light-text: #1a1a1a;
+    
+    /* Dark theme colors */
+    --dark-bg: #1a1a1a;
+    --dark-text: #ffffff;
+}
+
+/* Default to dark theme */
+:root {
+    --bg: var(--dark-bg);
+    --text: var(--dark-text);
+}
+
+/* Light theme when system prefers light or class is set */
+@media (prefers-color-scheme: light) {
+    :root:not(.dark-theme) {
+        --bg: var(--light-bg);
+        --text: var(--light-text);
+    }
+}
+
+/* Force dark theme when class is set */
+:root.dark-theme {
+    --bg: var(--dark-bg);
+    --text: var(--dark-text);
+}
+
+/* Force light theme when class is set */
+:root.light-theme {
+    --bg: var(--light-bg);
+    --text: var(--light-text);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Iosevka', monospace;
+    font-size: min(8vh, 5vw);
+    font-weight: bold;
+    line-height: 1.3;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    max-width: 90vw;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Iosevka', monospace;
+    font-size: min(12vh, 8vw);
+    font-weight: bold;
+    margin: 0 0 0.5em 0;
+}
+
+p {
+    margin: 0.3em 0;
+}
+
+/* Theme toggle button styling */
+.theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    opacity: 0.8;
+    z-index: 100;
+}
+
+.theme-toggle:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Show sun icon by default (dark theme) */
+.theme-toggle {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='5'%3E%3C/circle%3E%3Cline x1='12' y1='1' x2='12' y2='3'%3E%3C/line%3E%3Cline x1='12' y1='21' x2='12' y2='23'%3E%3C/line%3E%3Cline x1='4.22' y1='4.22' x2='5.64' y2='5.64'%3E%3C/line%3E%3Cline x1='18.36' y1='18.36' x2='19.78' y2='19.78'%3E%3C/line%3E%3Cline x1='1' y1='12' x2='3' y2='12'%3E%3C/line%3E%3Cline x1='21' y1='12' x2='23' y2='12'%3E%3C/line%3E%3Cline x1='4.22' y1='19.78' x2='5.64' y2='18.36'%3E%3C/line%3E%3Cline x1='18.36' y1='5.64' x2='19.78' y2='4.22'%3E%3C/line%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Show moon icon when in light theme */
+.light-theme .theme-toggle {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'%3E%3C/path%3E%3C/svg%3E");
+}
