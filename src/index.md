@@ -3,8 +3,8 @@ title: lorie.do
 layout: "base.njk"
 ---
 
-HUMANS ARE AWESOME
+HUMANS ARE <span class="dynamic-adjective">CREATIVE</span>
 
-HUMANS WRITE SOFTWARE
+HUMANS CRAFT LLMs
 
-SOFTWARE IS AWESOME
+LLMs ARE <span class="dynamic-adjective">CREATIVE</span>

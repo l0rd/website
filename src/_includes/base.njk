@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,10 +17,38 @@
     </main>
 
     <script>
+        // Dynamic adjectives functionality
+        async function loadAdjectives() {
+            try {
+                const response = await fetch('/adjectives.json');
+                const data = await response.json();
+                const adjectives = data.adjectives;
+
+                // Get all elements with class "dynamic-adjective"
+                const elements = document.querySelectorAll('.dynamic-adjective');
+
+                // Get one random adjective for all elements
+                const randomIndex = Math.floor(Math.random() * adjectives.length);
+                const randomAdjective = adjectives[randomIndex];
+
+                elements.forEach(element => {
+                    // Apply the same adjective to all elements
+                    element.textContent = randomAdjective;
+                });
+            } catch (error) {
+                console.error('Error loading adjectives:', error);
+            }
+        }
+
+        // Load adjectives when the page loads
+        document.addEventListener('DOMContentLoaded', loadAdjectives);
+    </script>
+
+    <script>
         // Theme toggle functionality
         const themeToggle = document.querySelector('.theme-toggle');
         const root = document.documentElement;
-        
+
         // Check for saved theme preference, otherwise use dark theme
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
