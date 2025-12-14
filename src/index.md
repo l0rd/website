@@ -5,6 +5,6 @@ layout: "base.njk"
 
 HUMANS ARE <span class="dynamic-adjective">CREATIVE</span>
 
-HUMANS CRAFT LLMs
+HUMANS BUILD FOUNDATION MODELS
 
-LLMs ARE <span class="dynamic-adjective">CREATIVE</span>
+FOUNDATION MODELS ARE <span class="dynamic-adjective">CREATIVE</span>
