@@ -11,7 +11,7 @@ A minimalist personal website built with [Eleventy](https://www.11ty.dev/), feat
 
 1. Clone the repository:
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/l0rd/website.git
 cd website
 ```
 
