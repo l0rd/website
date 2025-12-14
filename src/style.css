@@ -4,7 +4,7 @@
     /* Light theme colors */
     --light-bg: #ffffff;
     --light-text: #1a1a1a;
-    
+
     /* Dark theme colors */
     --dark-bg: #1a1a1a;
     --dark-text: #ffffff;
@@ -44,7 +44,7 @@ html, body {
 
 body {
     font-family: 'Iosevka', monospace;
-    font-size: min(8vh, 5vw);
+    font-size: min(5vh, 3vw);
     font-weight: bold;
     line-height: 1.3;
     background-color: var(--bg);
@@ -69,6 +69,27 @@ h1 {
 
 p {
     margin: 0.3em 0;
+}
+
+/* Homepage-specific styling (angelachen.org inspired) */
+body:has(main > :first-child:not(h1):not(table)) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 100px;
+}
+
+body:has(main > :first-child:not(h1):not(table)) main {
+    max-width: 650px;
+    padding: 20px 40px;
+    text-align: left;
+}
+
+body:has(main > :first-child:not(h1):not(table)) main p {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.6;
+    margin: 1em 0;
 }
 
 /* Table styling */
@@ -121,7 +142,7 @@ td a[href^="https"]:not([href*="lorie.do"]):not([href*="localhost"]):after {
     table {
         font-size: 0.4em;
     }
-    
+
     th, td {
         padding: 0.5rem;
     }
@@ -131,7 +152,7 @@ td a[href^="https"]:not([href*="lorie.do"]):not([href*="localhost"]):after {
 .talks-link {
     position: fixed;
     top: 1rem;
-    left: 1rem;
+    left: 3.5rem;
     font-family: 'Iosevka', monospace;
     font-size: 1rem;
     font-weight: bold;
@@ -151,7 +172,7 @@ td a[href^="https"]:not([href*="lorie.do"]):not([href*="localhost"]):after {
 .blog-link {
     position: fixed;
     top: 1rem;
-    left: 6rem;
+    left: 7rem;
     font-family: 'Iosevka', monospace;
     font-size: 1rem;
     font-weight: bold;
@@ -165,6 +186,36 @@ td a[href^="https"]:not([href*="lorie.do"]):not([href*="localhost"]):after {
 .blog-link:hover {
     opacity: 1;
     transform: scale(1.05);
+}
+
+/* Home button styling */
+.home-button {
+    position: fixed;
+    top: 0.7rem;
+    left: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    opacity: 0.8;
+    z-index: 100;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'%3E%3C/path%3E%3Cpolyline points='9 22 9 12 15 12 15 22'%3E%3C/polyline%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    display: block;
+}
+
+.home-button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Show home icon in dark color when in light theme */
+.light-theme .home-button {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'%3E%3C/path%3E%3Cpolyline points='9 22 9 12 15 12 15 22'%3E%3C/polyline%3E%3C/svg%3E");
 }
 
 /* Theme toggle button styling */
