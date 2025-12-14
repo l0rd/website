@@ -7,6 +7,7 @@ layout: "base.njk"
 
 | Date | Title | Summary |
 |------|-------|---------|
+| December 12, 2025 | [Run privileged commands more securely in OpenShift Dev Spaces](https://developers.redhat.com/articles/2025/12/12/run-privileged-commands-more-securely-openshift-dev-spaces) | How to run privileged commands in OpenShift Dev Spaces safely by using Kata containers sandboxing |
 | June 26, 2025 | [Managing Containers with the Model Context Protocol](https://blog.podman.io/2025/06/managing-containers-with-the-model-context-protocol/) | Explores using the Model Context Protocol (MCP) to enable AI models to manage containers, demonstrating AI-powered container management capabilities |
 | October 17, 2024 | [Support for Dev Containers Features on macOS and Windows](https://blog.podman.io/2024/10/support-for-dev-containers-features-on-macos-and-windows/) | Podman has improved support for Dev Containers Features on Windows and macOS, enabling developers to easily customize containerized development environments |
 | June 14, 2024 | [The new Hyper-V option in Podman Windows Installer](https://blog.podman.io/2024/06/the-new-hyper-v-option-in-podman-windows-installer/) | Explains the new Hyper-V configuration option in Podman's Windows installer, allowing users to choose between WSL 2 and Hyper-V virtualization |
