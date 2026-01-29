@@ -1,0 +1,281 @@
+# yaml-language-server: $schema=https://github.com/rendercv/rendercv/blob/main/schema.json?raw=true
+cv:
+  name: Mario Loriedo
+  headline: Senior Principal Software Engineer at Red Hat
+  website: https://m.lorie.do
+  social_networks:
+    - network: GitHub
+      username: l0rd
+  #  - network: X
+  #    username: mariolet
+  #    - network: LinkedIn
+  #      username: mario-loriedo
+  email: mario.loriedo@gmail.com
+  location: Paris, France
+  phone: +33(0)676069527
+
+  sections:
+    summary:
+      - Principal Software Engineer with 22+ years of experience designing and
+        leading large-scale developer platforms and container-based systems.
+    #     - Long-term Red Hat engineer and Podman maintainer, working at the intersection
+    #       of Kubernetes, Linux containers, and developer productivity.
+    #     - Proven track record of technical leadership, open-source stewardship, and
+    #       cross-organization impact at global scale.
+
+    skills:
+      - label: Distributed Systems
+        details: Kubernetes, Linux containers, OCI, cloud-native platforms
+      - label: Architecture
+        details: Platform engineering, developer experience (DevEx), scalability, security
+      - label: Leadership
+        details: Technical strategy, architectural reviews, mentoring, cross-team alignment
+      - label: Practices
+        details: TDD, Agile/Scrum, Software Craftsmanship
+      - label: Programming Languages
+        details: Go, TypeScript
+
+    work_experience:
+      - company: Red Hat
+        location: Remote
+        position: Senior Principal Software Engineer – Container Tools (Podman)
+        start_date: 2024-02
+        end_date: present
+        highlights:
+          - Maintainer of Podman and core Red Hat container tools used by millions of developers worldwide
+          - Driving architectural evolution of container workflows across Linux, macOS, and Windows
+          - Collaborating with upstream communities, OS vendors, and cloud providers
+          - Influencing Red Hat container strategy through design proposals and reviews
+
+      - company: Red Hat
+        location: Remote
+        position: Architect – OpenShift Dev Spaces & Eclipse Che
+        start_date: 2018
+        end_date: 2024
+        highlights:
+          - Technical architect for cloud-native developer workspaces on Kubernetes
+          - Led architecture and long-term roadmap for OpenShift Dev Spaces
+          - Project lead for Eclipse Che, coordinating distributed open-source contributors
+          - Designed secure, scalable multi-tenant development environments
+
+      - company: Red Hat
+        location: Remote
+        position: Tech Lead – workspaces.openshift.com
+        start_date: 2016
+        end_date: 2018
+        highlights:
+          - Tech lead for a hosted developer platform serving enterprise customers
+          - Established engineering best practices and production-readiness standards
+
+      - company: Zenika
+        position: CTO of Zenika Paris office
+        location: Paris, France
+        start_date: 2011
+        end_date: 2016
+        highlights:
+          - CTO of Zenika Paris, leading technical strategy and senior engineers
+          - Docker Certified Trainer and internal expert on containers and DevOps
+          - Software Craftsmanship Guild Leader, mentoring engineers across teams
+          - Software Engineer / Scrum Master for General Electric Real Estate Europe
+
+      - company: Italian Presidency of the Council of Ministers
+        position: Official
+        location: Rome, Italy
+        start_date: 2006
+        end_date: 2011
+        highlights:
+          - Software Engineer in national-scale security and software solutions teams
+          - Worked on secure systems within government infrastructure
+
+      - company: IBM – Software Group (Tivoli Lab)
+        position: Software Engineer
+        location: Rome, Italy
+        start_date: 2003
+        end_date: 2006
+        highlights:
+          - Software Engineer on Tivoli License Compliance Manager
+          - Contributed to enterprise-grade systems used by large organizations
+
+    open_source:
+      - label: "[Podman](https://github.com/containers) maintainer"
+        details: containers tools used across Linux distributions and enterprises
+      - label: "Co-creator of the [Devfile](https://devfile.io/)"
+        details: an open standard for Cloud Development Environments
+      - label: "Co-lead of [Eclipse Che](https://eclipse.dev/che/)"
+        details: a Kubernetes-native developer workspaces adopted by enterprises
+      # - label: Creator of [kubectl-debug-ide](https://github.com/devfile/kubectl-debug-ide)
+      #   details: an IDE-based debugging workflow for Kubernetes Pods
+
+    selected_blog_posts:
+      - bullet: "2025 - [Run privileged commands more securely in OpenShift Dev Spaces](https://developers.redhat.com/articles/2025/12/12/run-privileged-commands-more-securely-openshift-dev-spaces)"
+      - bullet: "2025 - [Managing Containers with the Model Context Protocol](https://blog.podman.io/2025/06/managing-containers-with-the-model-context-protocol/)"
+      - bullet: "2024 - [Support for Dev Containers Features on macOS and Windows](https://blog.podman.io/2024/10/support-for-dev-containers-features-on-macos-and-windows/)"
+      - bullet: "2024 - [The New Hyper-V Option in Podman Windows Installer](https://blog.podman.io/2024/06/the-new-hyper-v-option-in-podman-windows-installer/)"
+      - bullet: "2024 - [Red Hat OpenShift Dev Spaces Security Best Practices](https://developers.redhat.com/articles/2024/02/19/red-hat-openshift-dev-spaces-security-best-practices)"
+      - bullet: "2023 - [Why Cloud Development Environments Are Spiking in Popularity](https://open.substack.com/pub/pragmaticengineer/p/cloud-development-environments-why-now?utm_campaign=post-expanded-share&utm_medium=web)"
+
+    selected_talks:
+      - bullet: "2025 - KCD Czech & Slovak - [Play with Kube using Podman](https://www.youtube.com/live/kDYsTh6sXKo?t=5652s)"
+      - bullet: "2025 - KubeCon EU - [There Is a New Volume Type in Town!](https://youtu.be/zXIMJeJrnvI?si=piWqlb6NPo5tsjkd)"
+      - bullet: "2025 - FOSDEM - [Play with Kubernetes Using Podman](https://fosdem.org/2025/schedule/event/fosdem-2025-5759-play-with-kube-using-podman/)"
+      - bullet: "2024 - KubeCon NA - [Kubectl Debug Lacks an IDE Option. Let’s Fix That!](https://youtu.be/fg57Zmm4eN4)"
+
+    education:
+      - institution: University of Rome "La Sapienza"
+        area: Computer Science Engineering
+        degree: MS
+        start_date: 1995
+        end_date: 2003
+        highlights:
+          - "Score of 110/110"
+          - 'Degree thesis on "Network security: Intrusion Detection through Genetic Algorithms"'
+
+    # interests:
+    #   - "Endurance running: I am getting ready for my 8th marathon"
+    #   - "Reading: I love tech books as well as novels and non-fiction"
+    #   - "Parenting: I am the proud father of three girls"
+
+    post_scriptum:
+      - |
+        This resume was generated automatically from [mlcv.yaml](https://github.com/l0rd/website/blob/main/src/mlcv.yaml)
+        with [rendercv](https://github.com/rendercv/rendercv) on the 2026-01-29.
+
+design:
+  theme: engineeringclassic
+
+  # page:
+  #   size: us-letter
+  #   top_margin: 0.7in
+  #   bottom_margin: 0.7in
+  #   left_margin: 0.7in
+  #   right_margin: 0.7in
+  #   show_footer: true
+  #   show_top_note: true
+  #
+  # colors:
+  #   body: rgb(0, 0, 0)
+  #   name: rgb(0, 79, 144)
+  #   headline: rgb(0, 79, 144)
+  #   connections: rgb(0, 79, 144)
+  #   section_titles: rgb(0, 79, 144)
+  #   links: rgb(0, 79, 144)
+  #   footer: rgb(128, 128, 128)
+  #   top_note: rgb(128, 128, 128)
+  #
+  # typography:
+  #   line_spacing: 0.6em
+  #   alignment: justified
+  #   date_and_location_column_alignment: right
+  #   font_family:
+  #     body: Source Sans 3
+  #     name: Source Sans 3
+  #     headline: Source Sans 3
+  #     connections: Source Sans 3
+  #     section_titles: Source Sans 3
+  #   font_size:
+  #     body: 10pt
+  #     name: 30pt
+  #     headline: 10pt
+  #     connections: 10pt
+  #     section_titles: 1.4em
+  #   small_caps:
+  #     name: false
+  #     headline: false
+  #     connections: false
+  #     section_titles: false
+  #   bold:
+  #     name: true
+  #     headline: false
+  #     connections: false
+  #     section_titles: true
+  #
+  # links:
+  #   underline: false
+  #   show_external_link_icon: false
+  #
+  # header:
+  #   alignment: center
+  #   photo_width: 3.5cm
+  #   photo_position: left
+  #   photo_space_left: 0.4cm
+  #   photo_space_right: 0.4cm
+  #   space_below_name: 0.7cm
+  #   space_below_headline: 0.7cm
+  #   space_below_connections: 0.7cm
+  #   connections:
+  #     phone_number_format: national
+  #     hyperlink: true
+  #     show_icons: true
+  #     display_urls_instead_of_usernames: false
+  #     separator: ""
+  #     space_between_connections: 0.5cm
+  #
+  # section_titles:
+  #   type: with_partial_line
+  #   line_thickness: 0.5pt
+  #   space_above: 0.5cm
+  #   space_below: 0.3cm
+  #
+  # sections:
+  #   allow_page_break: true
+  #   space_between_regular_entries: 1.2em
+  #   space_between_text_based_entries: 0.3em
+  #   show_time_spans_in:
+  #     - experience
+  #
+  # entries:
+  #   date_and_location_width: 4.15cm
+  #   side_space: 0.2cm
+  #   space_between_columns: 0.1cm
+  #   allow_page_break: false
+  #   short_second_row: true
+  #   summary:
+  #     space_above: 0cm
+  #     space_left: 0cm
+  #   highlights:
+  #     bullet: •
+  #     nested_bullet: •
+  #     space_left: 0.15cm
+  #     space_above: 0cm
+  #     space_between_items: 0cm
+  #     space_between_bullet_and_text: 0.5em
+  #
+  # templates:
+  #   footer: "*NAME -- PAGE_NUMBER/TOTAL_PAGES*"
+  #   top_note: "*LAST_UPDATED CURRENT_DATE*"
+  #   single_date: MONTH_ABBREVIATION YEAR
+  #   date_range: START_DATE – END_DATE
+  #   time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
+  #   one_line_entry:
+  #     main_column: "**LABEL:** DETAILS"
+  #   education_entry:
+  #     main_column: |-
+  #       **INSTITUTION**, AREA
+  #       SUMMARY
+  #       HIGHLIGHTS
+  #     degree_column: "**DEGREE**"
+  #     date_and_location_column: |-
+  #       LOCATION
+  #       DATE
+  #   normal_entry:
+  #     main_column: |-
+  #       **NAME**
+  #       SUMMARY
+  #       HIGHLIGHTS
+  #     date_and_location_column: |-
+  #       LOCATION
+  #       DATE
+  #   experience_entry:
+  #     main_column: |-
+  #       **COMPANY**, POSITION
+  #       SUMMARY:working_dir: dir
+  #       HIGHLIGHTS
+  #     date_and_location_column: |-
+  #       LOCATION
+  #       DATE
+  #   publication_entry:
+  #     main_column: |-
+  #       **TITLE**
+  #       AUTHORS
+  #       URL (JOURNAL)
+  #     date_and_location_column: DATE
