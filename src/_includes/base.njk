@@ -17,8 +17,9 @@
     <a href="/" class="home-button" aria-label="Home"></a>
     <a href="/talks/" class="talks-link">TALKS</a>
     <a href="/blog/" class="blog-link">BLOG</a>
+    <a href="/cheatsheets/" class="cheatsheets-link">CHEATSHEETS</a>
     <button class="theme-toggle" aria-label="Switch to light mode"></button>
-    <main>
+    <main{% if pageClass %} class="{{ pageClass }}"{% endif %}>
         {{ content | safe }}
     </main>
 

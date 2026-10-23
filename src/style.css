@@ -188,6 +188,86 @@ td a[href^="https"]:not([href*="lorie.do"]):not([href*="localhost"]):after {
     transform: scale(1.05);
 }
 
+/* CHEATSHEETS link styling */
+.cheatsheets-link {
+    position: fixed;
+    top: 1rem;
+    left: 10rem;
+    font-family: 'Iosevka', monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--text);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 100;
+}
+
+.cheatsheets-link:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Cheatsheet pages (pageClass: cheatsheet): section headings, intro line and keys */
+.cheatsheet h2 {
+    font-size: 0.7em;
+    text-align: left;
+    margin: 2.5rem 0 0 0;
+}
+
+.cheatsheet h2 + table {
+    margin-top: 0.8rem;
+}
+
+/* Same column widths in every table */
+.cheatsheet h2 + table {
+    table-layout: fixed;
+}
+
+.cheatsheet h2 + table th:first-child {
+    width: 45%;
+}
+
+.cheatsheet .intro {
+    font-size: 0.45em;
+    font-weight: normal;
+}
+
+.cheatsheet .intro a {
+    color: var(--text);
+}
+
+.cheatsheet code {
+    font-family: 'Iosevka', monospace;
+    font-variant-ligatures: none; /* show != as typed, not as ≠ */
+    padding: 0.05em 0.35em;
+    border: 1px solid var(--text);
+    border-radius: 4px;
+    overflow-wrap: anywhere; /* let long commands wrap instead of overflowing */
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.cheatsheet table:last-child {
+    margin-bottom: 5rem; /* keep the last rows clear of the fixed footer */
+}
+
+/* Readable sizes on phones (the site's default sizes scale with screen width) */
+@media (max-width: 768px) {
+    .cheatsheet {
+        padding-top: 3rem; /* keep the title below the fixed top links */
+    }
+
+    .cheatsheet h2 {
+        font-size: 20px;
+    }
+
+    .cheatsheet .intro,
+    .cheatsheet table {
+        font-size: 14px;
+    }
+}
+
 /* Home button styling */
 .home-button {
     position: fixed;

@@ -29,6 +29,8 @@ src/
 ├── _includes/
 │   └── base.njk          # Main layout template with theme toggle and dynamic adjective scripts
 ├── index.md              # Homepage content (Markdown with frontmatter)
+├── cheatsheets.md        # Cheatsheets index (/cheatsheets/)
+├── cheatsheets/          # One page per cheatsheet; set `pageClass: cheatsheet` in frontmatter
 ├── style.css             # CSS with CSS custom properties for theming
 ├── adjectives.json       # JSON data file with adjectives for dynamic rotation
 └── favicon files         # Various favicon formats
