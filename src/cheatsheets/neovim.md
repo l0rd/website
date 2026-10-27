@@ -55,6 +55,18 @@ pageClass: cheatsheet
 | `"+p` | Paste system clipboard |
 | `"ayy` / `"Ayy` / `"ap` | Yank to / append to / paste from register `a` |
 
+## Scrolling
+
+| Keys / command | Action |
+|----------------|--------|
+| `Ctrl+e` / `Ctrl+y` | Scroll down / up one line (cursor stays put) |
+| `Ctrl+d` / `Ctrl+u` | Scroll down / up half a screen |
+| `Ctrl+f` / `Ctrl+b` | Scroll down / up a full screen |
+| `zt` / `zz` / `zb` | Put current line at top / middle / bottom of the screen |
+| `H` / `M` / `L` | Move cursor to top / middle / bottom of the screen |
+| `5 Ctrl+e` | Add a count to repeat (here: scroll 5 lines) |
+| `:set scrolloff=8` | Keep the cursor 8 lines from the screen edge |
+
 ## Buffers and files
 
 | Keys / command | Action |
