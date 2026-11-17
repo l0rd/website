@@ -19,6 +19,21 @@ pageClass: cheatsheet
 | `F7` | Reopen the debug panels (e.g. to see output after the program exits) |
 | `:lua require('dap').set_log_level('TRACE')` then `:DapShowLog` | Troubleshoot the debugger |
 
+## Testing (Go)
+
+Uses [neotest](https://github.com/nvim-neotest/neotest) with [neotest-golang](https://github.com/fredrikaverpil/neotest-golang). Tests run on the host OS.
+
+| Keys | Action |
+|------|--------|
+| `<leader>Tt` | Run the test nearest to the cursor |
+| `<leader>Tf` | Run all tests in the current file |
+| `<leader>Tl` | Re-run the last test |
+| `<leader>To` | Show the output of the nearest test (floating window) |
+| `<leader>TO` | Toggle the output panel |
+| `<leader>Ts` | Toggle the summary tree |
+| `<leader>Tx` | Stop the running test |
+| `<leader>Td` | Debug the nearest test (nvim-dap + delve) |
+
 ## Completion and snippets
 
 | Keys | Action |
